@@ -4,7 +4,7 @@ RUN apt-get update \
    && apt-get install -y --no-install-recommends  \
    libcurl4-openssl-dev \
    libssl-dev \
-   libxml2-dev \
+   libxml2-dev
    
    
 RUN install2.r --error --deps TRUE  Rcpp
