@@ -21,8 +21,6 @@ RUN install2.r --error --deps TRUE  XML
 
 RUN install2.r --error --deps TRUE  RSQLite
 
-RUN install2.r --error --deps TRUE  RCurl
-
 RUN install2.r --error --deps TRUE  bitops
 
 
