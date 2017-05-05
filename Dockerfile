@@ -1,6 +1,6 @@
 FROM r-base
 
-RUN RUN apt-get update \
+RUN apt-get update \
    && apt-get install -y --no-install-recommends  \
    libcurl4-openssl-dev
    
