@@ -31,8 +31,6 @@ RUN install2.r --error --deps TRUE  matrixStats
 
 RUN install2.r --error --deps TRUE  Hmisc
 
-RUN install2.r --error --deps TRUE  xtable
-
 RUN install2.r --error --deps TRUE  locfit
 
 
