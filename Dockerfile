@@ -37,7 +37,7 @@ RUN install2.r --error --deps TRUE  locfit
 
 
 
-RUN install2.r -r http://bioconductor.org/packages/3.0/bioc --deps TRUE \
+RUN install2.r -r http://bioconductor.org/packages/3.5/bioc --deps TRUE \
 	
 	QuasR \
 
