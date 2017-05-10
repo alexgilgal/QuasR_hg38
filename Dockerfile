@@ -36,10 +36,3 @@ RUN install2.r --error --deps TRUE  locfit
 
 
 RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c('QuasR', 'BSgenome.Hsapiens.UCSC.hg38', 'DESeq2' ));'
-
-    
-    
-    
-
-
-    rm -rf /tmp/downloaded_packages
