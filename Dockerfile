@@ -10,9 +10,9 @@ RUN apt-get update \
 
 
 
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite('QuasR' );'
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite("QuasR" );'
 
 
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite('BSgenome.Hsapiens.UCSC.hg38' );'
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite("BSgenome.Hsapiens.UCSC.hg38" );'
 
-RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite('DESeq2');'
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite("DESeq2");'
