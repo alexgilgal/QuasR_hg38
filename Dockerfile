@@ -19,8 +19,6 @@ RUN install2.r --error --deps TRUE  RSQLite
 
 RUN install2.r --error --deps TRUE  XML
 
-RUN install2.r --error --deps TRUE  RSQLite
-
 RUN install2.r --error --deps TRUE  bitops
 
 RUN install2.r --error --deps TRUE  hwriter
@@ -37,30 +35,8 @@ RUN install2.r --error --deps TRUE  locfit
 
 
 
-RUN install2.r -r http://bioconductor.org/packages/3.5/bioc --deps TRUE \
-	
-	QuasR \
+RUN Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c('QuasR', 'BSgenome.Hsapiens.UCSC.hg38', 'DESeq2' ));'
 
-	rtracklayer \
-	
-	org.Hs.eg.db \
-	
-	hgu133plus2.db \
-	
-	BSgenome.Hsapiens.UCSC.hg19 \
-	
-	TxDb.Hsapiens.UCSC.hg19.knownGene\
-	
-	annotate \
-	
-	BSgenome \
-
-	Rsamtools \
-
-    BSgenome.Hsapiens.UCSC.hg38 \
-    
-    DESeq2 \
-    
     
     
     
